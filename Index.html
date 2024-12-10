@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Assignment No.33</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.8/axios.min.js"
+        integrity="sha512-v8+bPcpk4Sj7CKB11+gK/FnsbgQ15jTwZamnBf/xDmiQDcgOIYufBo6Acu1y30vrk8gg5su4x0CG3zfPaq5Fcg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .posts-container {
+            margin: 0 auto;
+            max-width: 1200px;
+            background-color: #e4e4e4;
+            padding: 0px 0px;
+            padding: 15px;
+        }
+
+        h2 {
+            padding: 10px 0px;
+        }
+
+        ul li{
+            list-style: none;
+            padding: 5px 0;
+        }
+
+        .posts {
+            background-color: white;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 15px;
+            font-size: 16px;
+            border: 1px solid gray;
+        }
+
+        .users-container {
+            margin: 0 auto;
+            max-width: 1200px;
+            background-color: #e4e4e4;
+            padding: 15px;
+        }
+
+        .comments-container {
+            margin: 0 auto;
+            max-width: 1200px;
+            background-color: #e4e4e4;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Wrap -->
+    <div class="wrap">
+        <!-- header -->
+        <header>
+            <h1>My Blog</h1>
+        </header>
+        <!-- Post container -->
+        <div class="posts-container">
+            <h2>Posts</h2>
+            <div class="posts">
+                <ul id="all-posts">
+                    <!-- Here,posts will show through script in list items (li) -->
+
+                </ul>
+            </div>
+        </div>
+        <!-- Users -->
+        <div class="users-container">
+            <h2>Users</h2>
+            <div class="posts">
+                <ul id="all-users">
+                    <!-- Here,posts will show through script in list items (li) -->
+
+                </ul>
+            </div>
+        </div>
+        <!-- comments -->
+        <div class="comments-container">
+            <h2>comments on first post</h2>
+            <div class="posts">
+                <ul id="all-comments">
+                    <!-- Here,posts will show through script in list items (li) -->
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script file -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
